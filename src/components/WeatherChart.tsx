@@ -19,7 +19,7 @@ export const WeatherChart: React.FunctionComponent<WeatherChartProps> = ({ forec
                 contentStyle={{ backgroundColor: "#fff", color: "#666", border: "1px solid #ccc" }} 
                 itemStyle={{ color: "#666" }} 
                 labelStyle={{ color: "#666" }} 
-                formatter={(value, name) => [`${value}°${unit}`, "Temperature"]}
+                formatter={(value) => [`${value}°${unit}`, "Temperature"]}
                 />
                 <Line type="monotone" dataKey="temperature" stroke="#007bff" strokeWidth={2} />
             </LineChart>
